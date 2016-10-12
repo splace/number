@@ -1,5 +1,12 @@
 # number/text
 
+Overview/docs: [![GoDoc](https://godoc.org/github.com/splace/number/text?status.svg)](https://godoc.org/github.com/splace/number/text) 
+
+Installation:
+
+     go get github.com/splace/number/text   
+
+
 Example
 
 ```go
