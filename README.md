@@ -1,5 +1,7 @@
-# number
-go lang number utilities
+# number/text
+
+Example
+
 ```go
 package main
 
