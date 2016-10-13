@@ -3,8 +3,8 @@ package text
 import "strings"
 
 
-// Price returns the textual representation as money (in English) of the number provided divided by 100.
-// (so you will need to multiply a main unit by 100)
+// Price returns the textual representation of the given number (small currency units) in English.
+// You will need to multiply a main currency unit by 100.
 func Price(i int64) string {
 	if i==0 {return CurrencyZero}
 	accumulator := make([]string, 0, 10)
