@@ -52,33 +52,15 @@ func number(i int64, accumulator *[]string) {
 	lessThan1000(i, accumulator)
 }
 
-func lessThan10(i int64, accumulator *[]string) {
-	if i == 0 {
-		return
-	}
-	*accumulator = append(*accumulator, Units[i])
-}
-
-func lessThan20(i int64, accumulator *[]string) {
-	if i == 0 {
-		return
-	}
-	if i < 10 {
-		lessThan10(i, accumulator)
-	} else {
-		*accumulator = append(*accumulator, Teens[i-10])
-	}
-}
-
 func lessThan100(i int64, accumulator *[]string) {
 	if i == 0 {
 		return
 	}
 	if i < 20 {
-		lessThan20(i, accumulator)
+		*accumulator = append(*accumulator, Units[i])
 	} else {
 		*accumulator = append(*accumulator, Tens[i/10-2])
-		lessThan10(i%10, accumulator)
+		*accumulator = append(*accumulator, Units[i%10])
 	}
 }
 
@@ -89,7 +71,7 @@ func lessThan1000(i int64, accumulator *[]string) {
 	if i < 100 {
 		lessThan100(i, accumulator)
 	} else {
-		lessThan10(i/100, accumulator)
+		*accumulator = append(*accumulator, Units[i/100])
 		*accumulator = append(*accumulator, Hundred)
 		if i%100 > 0 {
 			*accumulator = append(*accumulator, HundredDivider)
