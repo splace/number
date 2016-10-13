@@ -8,6 +8,12 @@ import "strings"
 func Price(i int64) string {
 	if i==0 {return CurrencyZero}
 	accumulator := make([]string, 0, 10)
+	if i<0 {
+		if len(Negative)>0{accumulator = append(accumulator, Negative)}
+		i=-i
+	}else{
+		if len(Positive)>0{accumulator = append(accumulator, Positive)}
+	}
 	number(i/100, &accumulator)
 	switch i/100 {
 	case 0:

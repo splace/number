@@ -1,5 +1,5 @@
 /*
-Package text converts a number into text, in English.
+Package text converts numbers into text.
 */
 package text
 

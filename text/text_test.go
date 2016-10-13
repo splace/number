@@ -21,7 +21,7 @@ func TestSay(t *testing.T) {
 	if Number(1123) != "one thousand, one hundred and twenty three" {
 		t.FailNow()
 	}
-	fmt.Println(Price(1588))
+	fmt.Println(Price(-150))
 }
 
 
