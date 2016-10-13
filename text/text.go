@@ -11,3 +11,10 @@ var PowerThousands = [...]string{"thousand", "million", "billion", "trillion", "
 var ThousandDivider = ""
 var Joiner=" "
 
+var CurrencyZero = "nought"
+var Currency = "pound"
+var SmallDivider =","
+var SmallCurrency = "pence"
+
+
+
