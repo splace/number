@@ -22,43 +22,40 @@ func Number(i int64) string {
 	return strings.Join(accumulator, Joiner)
 }
 
-func number(i int64, accumulator *[]string) {
+func number(n int64, accumulator *[]string) {
+	i:=n
 	if i >= 1e18 {
 		lessThan1000(i/1e18, accumulator)
-		*accumulator = append(*accumulator, PowerThousands[5]+ThousandDivider)
 		i %= 1e18
+		*accumulator = append(*accumulator, PowerThousands[5]+ThousandDivider)
 	}
 	if i >= 1e15 {
 		lessThan1000(i/1e15, accumulator)
-		*accumulator = append(*accumulator, PowerThousands[4]+ThousandDivider)
 		i %= 1e15
+		*accumulator = append(*accumulator, PowerThousands[4]+ThousandDivider)
 	}
 	if i >= 1e12 {
 		lessThan1000(i/1e12, accumulator)
-		*accumulator = append(*accumulator, PowerThousands[3]+ThousandDivider)
 		i %= 1e12
+		*accumulator = append(*accumulator, PowerThousands[3]+ThousandDivider)
 	}
 	if i >= 1e9 {
 		lessThan1000(i/1e9, accumulator)
-		*accumulator = append(*accumulator, PowerThousands[2]+ThousandDivider)
 		i %= 1e9
+		*accumulator = append(*accumulator, PowerThousands[2]+ThousandDivider)
 	}
 	if i >= 1e6 {
 		lessThan1000(i/1e6, accumulator)
-		*accumulator = append(*accumulator, PowerThousands[1]+ThousandDivider)
 		i %= 1e6
+		*accumulator = append(*accumulator, PowerThousands[1]+ThousandDivider)
 	}
 
 	if i >= 1e3 {
 		lessThan1000(i/1e3, accumulator)
 		i %= 1e3
-		if i>0 && i/1e2==0 {
-			*accumulator = append(*accumulator, PowerThousands[0])
-			if len(And)>0 {*accumulator = append(*accumulator, And)}
-			}else{
-			*accumulator = append(*accumulator, PowerThousands[0]+ThousandDivider)
-		}
+		*accumulator = append(*accumulator, PowerThousands[0]+ThousandDivider)
 	}
+	if i>0 && i!=n && i/100==0 { *accumulator = append(*accumulator, And)}
 	lessThan1000(i, accumulator)
 }
 
