@@ -64,10 +64,22 @@ func Example2001() {
 	two thousand and one
 	*/
 }	
+func Example5001() {
+	fmt.Println(Year(-5001))
+	/* Output:
+	five thousand and one BC
+	*/
+}	
 func Example1904() {
 	fmt.Println(Year(1904))
 	/* Output:
 	nineteen oh four
+	*/
+}
+func Example25() {
+	fmt.Println(Year(25))
+	/* Output:
+	twenty five
 	*/
 }
 func Example1123() {
@@ -82,6 +94,13 @@ func Example1630() {
 	fmt.Println(TimeOfDay(16*60+30))
 	/* Output:
 	four thirty
+	*/
+}
+
+func Example2105() {
+	fmt.Println(TimeOfDay(21*60+5))
+	/* Output:
+	nine oh five
 	*/
 }
 
@@ -107,5 +126,6 @@ func ExampleMidnight() {
 	12 midnight
 	*/
 }
+
 
 

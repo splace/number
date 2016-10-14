@@ -2,7 +2,7 @@ package text
 
 import "strings"
 
-// Number returns the string representation (in English) of the number provided.
+// Number converts a number into text, in English speech.
 func Number(i int64) string {
 	if i == 0 {
 		return Units[0]
