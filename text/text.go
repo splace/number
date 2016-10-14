@@ -17,3 +17,12 @@ var SmallCurrency = "pence"
 
 var DatePositive = "AD"
 var DateNegative = "BC"
+var DateZero = "oh"
+
+var TimeBeforenoon= "am"
+var TimeAfternoon = ""
+var TimeHour = "o'clock"
+var Noon = "12 noon"
+var Midnight = "12 midnight"
+
+

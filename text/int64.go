@@ -55,7 +55,7 @@ func number(n int64, accumulator *[]string) {
 		i %= 1e3
 		*accumulator = append(*accumulator, PowerThousands[0]+ThousandDivider)
 	}
-	if i>0 && i!=n && i/100==0 { *accumulator = append(*accumulator, And)}
+	if i>0 && i!=n && i/100==0 && And!="" { *accumulator = append(*accumulator, And)}
 	lessThan1000(i, accumulator)
 }
 
@@ -80,7 +80,7 @@ func lessThan1000(i int64, accumulator *[]string) {
 		*accumulator = append(*accumulator, Units[i/100])
 		*accumulator = append(*accumulator, Hundred)
 		if i%100 > 0 {
-			if len(And)>0 {*accumulator = append(*accumulator, And)}
+			if And !=""  {*accumulator = append(*accumulator, And)}
 		}
 		lessThan100(i%100, accumulator)
 	}

@@ -64,11 +64,47 @@ func Example2001() {
 	two thousand and one
 	*/
 }	
+func Example1904() {
+	fmt.Println(Year(1904))
+	/* Output:
+	nineteen oh four
+	*/
+}
 func Example1123() {
 	ThousandDivider = ","
 	fmt.Println(Number(1123))
 	/* Output:
 	one thousand, one hundred and twenty three
+	*/
+}
+
+func Example1630() {
+	fmt.Println(TimeOfDay(16*60+30))
+	/* Output:
+	four thirty
+	*/
+}
+
+func Example230() {
+	fmt.Println(TimeOfDay(2*60+10))
+	/* Output:
+	two ten am
+	*/
+}
+
+
+func Example4() {
+	fmt.Println(TimeOfDay(16*60))
+	/* Output:
+	four o'clock
+	*/
+}
+
+
+func ExampleMidnight() {
+	fmt.Println(TimeOfDay(0))
+	/* Output:
+	12 midnight
 	*/
 }
 

@@ -2,8 +2,8 @@ package text
 
 import "strings"
 
-// Price returns the textual representation of the given number (small currency units) in English.
-// You will need to multiply a main currency unit by 100.
+// Price returns the textual representation of the given number of small currency units.
+// Multiply a main currency unit by 100.
 func Price(m uint64) string {
 	if m == 0 {
 		return CurrencyZero
