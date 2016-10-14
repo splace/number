@@ -3,7 +3,7 @@ package text
 import "math"
 import "fmt"
 
-func ExampleMaxInt() {
+func ExampleNumber() {
 	fmt.Println(Number(math.MaxInt64))
 	/* Output:
 	nine quintillion two hundred and twenty three quadrillion three hundred and seventy two trillion thirty six billion eight hundred and fifty four million seven hundred and seventy five thousand eight hundred and seven
@@ -46,7 +46,7 @@ func Example3000000001() {
 	three billion and one
 	*/
 }
-func Example150() {
+func ExamplePrice() {
 	fmt.Println(Price(150))
 	/* Output:
 	one fifty
@@ -64,7 +64,7 @@ func Example2001() {
 	two thousand and one
 	*/
 }	
-func Example5001() {
+func ExampleYear() {
 	fmt.Println(Year(-5001))
 	/* Output:
 	five thousand and one BC
@@ -112,7 +112,7 @@ func Example230() {
 }
 
 
-func Example4() {
+func ExampleTimeOfDay() {
 	fmt.Println(TimeOfDay(16*60))
 	/* Output:
 	four o'clock
