@@ -6,7 +6,7 @@ Installation:
 
      go get github.com/splace/number/text   
 
-See output examples in test file:
+For examples see test file:
 
 https://github.com/splace/number/blob/master/text/text_test.go
 
