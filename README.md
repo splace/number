@@ -1,4 +1,4 @@
-Number usage varients:
+Number usage variants:
 
 Counting
 Time of Day
