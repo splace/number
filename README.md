@@ -1,9 +1,9 @@
 Number usage variants:
 
-     Counting
-     Time of Day
-     Currency
-     Year
+*    Number/Counting
+*    Time of Day
+*    Price/Currency
+*    Year
 
 Overview/docs: [![GoDoc](https://godoc.org/github.com/splace/number/text?status.svg)](https://godoc.org/github.com/splace/number/text) 
 
