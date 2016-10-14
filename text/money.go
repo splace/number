@@ -2,7 +2,7 @@ package text
 
 import "strings"
 
-// Price converts the small currency value, into text in English speech.
+// Price converts a small currency value, into text in English speech.
 // Multiply a main currency unit by 100.
 func Price(m uint64) string {
 	if m == 0 {

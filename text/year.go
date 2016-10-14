@@ -2,7 +2,7 @@ package text
 
 import "strings"
 
-// Year converts the year, into text in English speech.
+// Year converts a year, into text in English speech.
 func Year(i int64) string {
 	accumulator := make([]string, 0, 5)
 	ending:=DatePositive
