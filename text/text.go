@@ -16,14 +16,14 @@ var SmallDivider = ","
 var SmallCurrency = "pence"
 
 var DatePositive = ""
-var DateNegative = "BC"
+var DateNegative = "bc"
 var DateZero = "oh"
 
 var TimeBeforenoon= "am"
 var TimeAfternoon = ""
 var TimeZero = "oh"
 var TimeHour = "o'clock"
-var Noon = "12 noon"
-var Midnight = "12 midnight"
+var Noon = "noon"
+var Midnight = "midnight"
 
 
